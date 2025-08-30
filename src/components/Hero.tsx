@@ -50,17 +50,13 @@ const Hero: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button
-                  onClick={handleContact}
-                  className="inline-flex items-center px-6 py-3 bg-blue-600 dark:bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  onClick={() => window.location.href = '/Nitesh_Kumar_Resume(2025).pdf'}
+                  className="inline-flex items-center px-6 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 font-semibold rounded-lg hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white dark:hover:text-white transition-all duration-200 transform hover:-translate-y-1"
                 >
-                  <Mail size={20} className="mr-2" />
-                  Get In Touch
-                </button>
-                
-                <button className="inline-flex items-center px-6 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 font-semibold rounded-lg hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white dark:hover:text-white transition-all duration-200 transform hover:-translate-y-1">
                   <Download size={20} className="mr-2" />
                   Download CV
                 </button>
+
               </div>
 
               <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-600 dark:text-gray-400">
@@ -88,7 +84,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </section>
-  );
+    );
 };
 
 export default Hero;
